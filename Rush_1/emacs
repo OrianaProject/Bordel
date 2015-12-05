@@ -1,0 +1,22 @@
+;; To make a file-header, download the files header2.el and lib-requires.el then put them in your .emacs.d
+;; Add the .d to the load path of emacs, enable the header and set your own command with the following lines :
+
+(add-to-list 'load-path "~/.emacs.d/")
+(autoload 'make-header "header2")
+(global-set-key (kbd "C-c h") 'make-header)
+
+;; To modify the header, directly modify the code in header2.el or set your own settings in your .emacs
+
+(defun my-insert-header ()
+  "Asks for file name, date, description, ... and insert at point."
+  (interactive)
+  (setq cur-file (read-from-minibuffer "file name ? " 
+                   (file-name-nondirectory (buffer-file-name))))
+  (setq cur-date (org-read-date))
+  (setq cur-author "Me")
+  (setq cur-description (read-from-minibuffer "description ? "))
+  (insert (format "# File: %s \n" cur-file))
+  (insert (concat "# date : %s \n" cur-date))
+  (insert (format "# Description : %s \n" cur-description))
+)
+
