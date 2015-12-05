@@ -21,3 +21,6 @@ set cursorcolumn
 
 highlight DoubleWhitespace ctermbg=red guibg=red
 match DoubleWhitespace / \+\ \|\s\+\zs\n/
+
+set backup
+set backupdir=~/.vim
