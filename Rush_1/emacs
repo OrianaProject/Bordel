@@ -5,18 +5,4 @@
 (autoload 'make-header "header2")
 (global-set-key (kbd "C-c h") 'make-header)
 
-;; To modify the header, directly modify the code in header2.el or set your own settings in your .emacs
-
-(defun my-insert-header ()
-  "Asks for file name, date, description, ... and insert at point."
-  (interactive)
-  (setq cur-file (read-from-minibuffer "file name ? " 
-                   (file-name-nondirectory (buffer-file-name))))
-  (setq cur-date (org-read-date))
-  (setq cur-author "Me")
-  (setq cur-description (read-from-minibuffer "description ? "))
-  (insert (format "# File: %s \n" cur-file))
-  (insert (concat "# date : %s \n" cur-date))
-  (insert (format "# Description : %s \n" cur-description))
-)
-
+;; To modify the header, directly modify the code in header2.el.
