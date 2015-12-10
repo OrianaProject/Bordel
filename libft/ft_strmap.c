@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   strmap.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gperroch <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/11/27 11:24:34 by gperroch          #+#    #+#             */
+/*   Updated: 2015/12/10 14:51:38 by gperroch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
+#include "libft.h"
+
+char	*ft_strmap(char const *s, char (*f)(char))
+{
+	int		i;
+	int		j;
+	char	*result;
+
+	i = 0;
+	j = 0;
+	if (s == NULL)
+		return (NULL);
+	while (s[i] != '\0')
+		i++;
+	if (!(result = (char*)malloc(sizeof(char) * (i + 1))))
+		return (NULL);
+	while (s[j] != '\0')
+	{
+		result[j] = (*f)(s[j]);
+		j++;
+	}
+	result[j] = '\0';
+	return (result);
+}
