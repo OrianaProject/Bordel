@@ -30,7 +30,7 @@ I/ Maison de Sylvain Duriff - Labos d'Aldebaran => GENESE D'UN SURHOMME
 		- Level design: A FAIRE
 		- OBJECTIF : Trouver et vaincre le meneur de l'attaque reptilienne
 		- ENNEMIS : Reptiliens / Illuminatis
-		- AMBIANCE SONORE : labo_ambient.mp3
+		- AMBIANCE SONORE : labo_ambient.mp3, teleport.mp3
 _______________________________________________________________________________
 
 II/ Foret de Broceliande => REVELATION DE MERLIN
