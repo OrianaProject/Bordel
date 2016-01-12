@@ -47,7 +47,7 @@ II/ Foret de Broceliande => REVELATION DE MERLIN
 		- Cinematique (Sylvain Duriff goes fcking Super Saiyan, motherfucker)
 		- Spawn la ou le joueur s'est arrete (bloquer le path d'arrivee)
 		- Level design : A FAIRE (Labyrinthe)
-		- OBJECTIF : Eliminer tous les agens reptiliens / illuminatis
+		- OBJECTIF : Eliminer tous les agents reptiliens / illuminatis
 					+ Desarmer les bombes qu'ils ont placees
 		- ENNEMIS : Reptiliens / Illuminatis
 		- AMBIANCE SONORE : danger_forest.mp3, forest_footsteps.mp3
