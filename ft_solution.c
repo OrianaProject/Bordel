@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "../Includes/fillit.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 static int	ft_walkthrough(char **ordres)
 {
@@ -79,22 +77,4 @@ char		*ft_solution(char **ordres)
 	while (ordres[i][0] == '\0')
 		i++;
 	return (ft_strdup(ordres[i]));
-}
-
-int			main(int argc, char **argv)
-{
-	char	**ordres;
-	int		i;
-
-	i = 0;
-	if (!(ordres = (char**)malloc(sizeof(char*) * argc)))
-		return (0);
-	ordres[argc - 1] = NULL;
-	while (i < argc - 1)
-	{
-		ordres[i] = argv[i + 1];
-		i++;
-	}
-	printf("%s\n", ft_solution(ordres));
-	return (0);
 }
